@@ -23,7 +23,7 @@
 
     <div id="fullpage">
         <div id="CARD1"
-            style="background-image: url(./images/chaoshi.png);background-position: center center;object-fit: fill;"
+            style="background-image: url(./images/csz.png);background-position: center center;object-fit: fill;"
             class="section">
 
             <nav class="navbar fixed-top">
@@ -35,11 +35,18 @@
             </nav>
             <div class="position-absolute top-50 start-50 translate-middle text">
                 <div>
-                    <span class="text"> ↓ </span>
+                    <span class="text"> </span>
                 </div>
-                <a class="minecraft-button" href="./blogs/">
-                    <span>进入官网</span>
-                </a>
+                <div style="margin-top: 10px;">
+                    <a class="minecraft-button" href="./blogs/">
+                        <span>进入官网</span>
+                    </a>
+                </div>
+                <div style="margin-top: 10px;">
+                    <a class="minecraft-button" href="#">
+                        <span style="font-size: 23px;">加入QQ群</span>
+                    </a>
+                </div>
             </div>
             <div class="position-absolute bottom-0 start-50 translate-middle-x">
                 <a class="mdui-icon material-icons mdui-text-color-white jump" href="#"
@@ -51,7 +58,7 @@
 
 
         <div id="CARD2"
-            style="background-image:url(./images/ld.png);background-position: center center;object-fit: fill;"
+            style="background-image:url(./images/jy.png);background-position: center center;object-fit: fill;"
             class="section">
             <div class="container text-center">
                 <div class="row">
@@ -59,18 +66,14 @@
                     <div class="col">
                     </div>
                     <!-- 中间 -->
-                    <div id="am1" class="col-md-auto">
-                        <div class="card text-center">
-                            <div class="card-header">
-                                BYD小镇服务器
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Minecraft Server</h5>
-                                <p class="card-text">在这里，一切皆有可能。这是一次旅程，一次冒险，一次战斗。<br />我们带着希望和梦想，踏上了未知的道路。<br />每一步都充满了挑战和机遇，每一次呼吸都充满了探索的气息。</p>
-                                <a href="./blogs/index.html" class="btn btn-primary">进入官网</a>
-                            </div>
-                            <div class="card-footer text-muted">
-                                
+                    <div class="col-md-auto">
+                        <div class="card text-center" style="background-image: url(./images/planks.png);">
+                            <div class="card-body" style="color: white;">
+                                <h4>BYD 小镇Minecraft JAVA 服务器</h4>
+                                <p style="font-size: larger;">
+                                    在这里，一切皆有可能。这是一次旅程，一次冒险，一次战斗。<br />我们带着希望和梦想，踏上了未知的道路。<br />每一步都充满了挑战和机遇，每一次呼吸都充满了探索的气息。
+                                </p>
+                                <a href="./blogs/index.html" class="java-btn">服务器历史</a>
                             </div>
                         </div>
                     </div>
@@ -84,24 +87,24 @@
 
 
     <script>
-        // 定义一个回调函数，当元素进入或离开视口时会被调用
-var callback = function(entries, observer) {
-    entries.forEach(entry => {
-        // 如果元素在视口中
-        if(entry.isIntersecting) {
-            entry.target.classList.add('bounce_scale_1');
-        } else {
-            entry.target.classList.remove('bounce_scale_1');
-        }
-    });
-};
+        //         // 定义一个回调函数，当元素进入或离开视口时会被调用
+        // var callback = function(entries, observer) {
+        //     entries.forEach(entry => {
+        //         // 如果元素在视口中
+        //         if(entry.isIntersecting) {
+        //             entry.target.classList.add('bounce_scale_1');
+        //         } else {
+        //             entry.target.classList.remove('bounce_scale_1');
+        //         }
+        //     });
+        // };
 
-// 创建一个新的 IntersectionObserver 实例
-var observer = new IntersectionObserver(callback);
+        // // 创建一个新的 IntersectionObserver 实例
+        // var observer = new IntersectionObserver(callback);
 
-// 开始观察一个元素
-var element = document.querySelector('#am1');
-observer.observe(element);
+        // // 开始观察一个元素
+        // var element = document.querySelector('#am1');
+        // observer.observe(element);
 
     </script>
 
