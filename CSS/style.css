@@ -1,0 +1,48 @@
+.text {
+    color: white;
+    text-align: center;
+}
+
+
+.jump{
+    animation: animate 0.9s ease-in-out infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+.bounce_scale_1{
+    -webkit-animation:bounce_scale_1 .8s ease-out;
+}
+@-webkit-keyframes bounce_scale_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform:scale(0);
+  }
+  25%{
+      opacity:1;
+      -webkit-transform:scale(1);
+  }
+  40%{
+      -webkit-transform:scale(0.9);
+  }
+  55%{
+      -webkit-transform:scale(1);
+  }
+  70%{
+       -webkit-transform:scale(0.98);
+  }
+  85%,100%{
+      -webkit-transform:scale(1);
+  }
+}

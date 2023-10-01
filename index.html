@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello , BYD。</title>
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- minecraft按钮 -->
+    <link rel="stylesheet" href="./CSS/btn.css">
+    <!-- 其他样式 -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- fullpage.js -->
+    <link rel="stylesheet" href="./CSS/fullpage.css">
+    <!-- mdui -->
+    <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
+</head>
+
+<body data-bs-theme="dark">
+
+
+    <div id="fullpage">
+        <div id="CARD1"
+            style="background-image: url(./images/chaoshi.png);background-position: center center;object-fit: fill;"
+            class="section">
+
+            <nav class="navbar fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/icon.png" alt="Logo" width="150" height="150"
+                            class="d-inline-block align-text-top">
+                    </a>
+            </nav>
+            <div class="position-absolute top-50 start-50 translate-middle text">
+                <div>
+                    <span class="text"> ↓ </span>
+                </div>
+                <a class="minecraft-button" href="./blogs/">
+                    <span>进入官网</span>
+                </a>
+            </div>
+            <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                <a class="mdui-icon material-icons mdui-text-color-white jump" href="#"
+                    onclick="fullpage_api.moveSectionDown();">
+                    <i style="font-size: 50px;" class="mdui-icon material-icons">keyboard_arrow_down</i>
+                </a>
+            </div>
+        </div>
+
+
+        <div id="CARD2"
+            style="background-image:url(./images/ld.png);background-position: center center;object-fit: fill;"
+            class="section">
+            <div class="container text-center">
+                <div class="row">
+                    <!-- 左边 -->
+                    <div class="col">
+                    </div>
+                    <!-- 中间 -->
+                    <div id="am1" class="col-md-auto">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                BYD小镇服务器
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Minecraft Server</h5>
+                                <p class="card-text">在这里，一切皆有可能。这是一次旅程，一次冒险，一次战斗。<br />我们带着希望和梦想，踏上了未知的道路。<br />每一步都充满了挑战和机遇，每一次呼吸都充满了探索的气息。</p>
+                                <a href="./blogs/index.html" class="btn btn-primary">进入官网</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 右边 -->
+                    <div class="col">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // 定义一个回调函数，当元素进入或离开视口时会被调用
+var callback = function(entries, observer) {
+    entries.forEach(entry => {
+        // 如果元素在视口中
+        if(entry.isIntersecting) {
+            entry.target.classList.add('bounce_scale_1');
+        } else {
+            entry.target.classList.remove('bounce_scale_1');
+        }
+    });
+};
+
+// 创建一个新的 IntersectionObserver 实例
+var observer = new IntersectionObserver(callback);
+
+// 开始观察一个元素
+var element = document.querySelector('#am1');
+observer.observe(element);
+
+    </script>
+
+    <!-- fullpage.js -->
+    <script src="./JS/fullpage.js"></script>
+    <script type="text/javascript">
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling: true,
+            scrollHorizontally: true
+        });
+    </script>
+</body>
+
+
+<!-- bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<!-- main.js -->
+<script src="./JS/main.js"></script>
+
+
+</html>
